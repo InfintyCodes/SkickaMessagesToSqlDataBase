@@ -28,7 +28,6 @@ namespace SendDataToSqlDataBase
                 using (var cmd = new SqlCommand("", conn))
                 {
                     cmd.CommandText = "INSERT INTO DhtMeasurements OUTPUT inserted.Id VALUES(@DeviceId, @epochTime, @Temperature, @Humidity)";
-                    //cmd.Parameters.AddWithValue("@DeviceId", deviceId);
                     cmd.Parameters.AddWithValue("@DeviceId", msg.deviceId);
                     cmd.Parameters.AddWithValue("@epochTime", msg.epochTime);
                     cmd.Parameters.AddWithValue("@Temperature", msg.temperature);
