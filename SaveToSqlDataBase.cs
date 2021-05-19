@@ -27,11 +27,11 @@ namespace SendDataToSqlDataBase
                 conn.Open();
                 using (var cmd = new SqlCommand("", conn))
                 {
-                    cmd.CommandText = "INSERT INTO DhtMeasurements OUTPUT inserted.Id VALUES(@DeviceId, @epochTime, @Temperature, @Humidity)";
+                    cmd.CommandText = "INSERT INTO DhtMeasurements OUTPUT inserted.Id VALUES(@DeviceId, @Temperature, @Humidity, @epochTime)";
                     cmd.Parameters.AddWithValue("@DeviceId", msg.deviceId);
-                    cmd.Parameters.AddWithValue("@epochTime", msg.epochTime);
                     cmd.Parameters.AddWithValue("@Temperature", msg.temperature);
                     cmd.Parameters.AddWithValue("@Humidity", msg.humidity);
+                    cmd.Parameters.AddWithValue("@epochTime", msg.epochTime);
                     cmd.ExecuteNonQuery();
 
                     return;
