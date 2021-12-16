@@ -3,7 +3,7 @@
   "Values": {
     "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=storageaccountiot20b0f7;AccountKey=8P6w2diFDkBgoX6hjkcZCpBtnJ0HhpFqHL2kdrw3lTv+tdR25vHirA80SFgz9nQ/gl6jLF4zW8mYIi70R9lgyw==;BlobEndpoint=https://storageaccountiot20b0f7.blob.core.windows.net/;TableEndpoint=https://storageaccountiot20b0f7.table.core.windows.net/;QueueEndpoint=https://storageaccountiot20b0f7.queue.core.windows.net/;FileEndpoint=https://storageaccountiot20b0f7.file.core.windows.net/",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
-    "IOTHUB-2021": "Endpoint=sb://ihsuprodamres109dednamespace.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=YwW4rajnt0zKUvsiJ7GdqzbhvcAJ5EhdIlKOJXm0bsQ=;EntityPath=iothub-ehub-iothub2020-11073554-8d68ee4100",
+    "IOTHUB-2021": "Endpoint=sb://iothub-ns-iothub2020-16329041-3b6a471797.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=xKo44V7F3rgJkKi+by3AW2tW6RQYLRiVyYwTnggxCS8=;EntityPath=iothub2020",
     "IotHub": "HostName=IOTHUB2020.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=YwW4rajnt0zKUvsiJ7GdqzbhvcAJ5EhdIlKOJXm0bsQ=",
     "SqlConnection": "Server=tcp:sql-server2021.database.windows.net,1433;Initial Catalog=SQLDataBase;Persist Security Info=False;User ID=Youssef;Password=AddMe2021;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
   }
